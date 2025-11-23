@@ -12,7 +12,7 @@ let TUBE_DETAIL      = 20;     // reduced for better performance
 
 // Camera / view
 let CAM_ROT_X        = -0.2;
-let CAM_ROT_Y        = 0.4;       // <--- new: initial Y rotation offset
+let CAM_ROT_Y        = 1.2;       // <--- new: initial Y rotation offset
 let CAM_ROT_Y_SPEED  = 0.0008;
 let CAM_DISTANCE     = 0;
 
