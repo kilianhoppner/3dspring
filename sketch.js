@@ -14,7 +14,7 @@ let TUBE_DETAIL      = 20;
 let CAM_ROT_X        = -0.2;
 let CAM_ROT_Y        = 1.2;
 let CAM_ROT_Y_SPEED  = 0.0008;
-let CAM_DISTANCE     = 0;
+let CAM_DISTANCE     = -300;
 
 // Mouse rotation deltas
 let dragDX = 0;
