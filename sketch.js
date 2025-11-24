@@ -14,7 +14,7 @@ let TUBE_DETAIL      = 20;
 let CAM_ROT_X        = -0.2;
 let CAM_ROT_Y        = 1.2;
 let CAM_ROT_Y_SPEED  = 0.0008;
-let CAM_DISTANCE     = -300;
+let CAM_DISTANCE     = -50;
 
 // Mouse rotation deltas
 let dragDX = 0;
@@ -72,11 +72,13 @@ function draw() {
 
 
 /************************************
- * Mouse drag → rotate object
+ * Mouse click → toggle fullscreen
+ * (removed click-and-drag orbit control)
  ************************************/
-function mouseDragged() {
-  dragDX += movedX * 0.005;  // adjust sensitivity
-  dragDY += movedY * 0.005;
+function mouseClicked() {
+  // Toggle fullscreen on each click
+  fullscreen(!fullscreen());
+  return false; // prevent default
 }
 
 
